@@ -1,0 +1,13 @@
+body {
+    background-color: rgba(69,77,94) !important;
+}
+i {
+    margin-right: 3px;
+}
+.nav-pills > li > a {
+    color: white !important;
+    font-size: 20px;
+}
+.main {
+    background-color: black;
+}
