@@ -6,8 +6,38 @@ i {
 }
 .nav-pills > li > a {
     color: white !important;
-    font-size: 20px;
+    font-size: 18px;
 }
 .main {
-    background-color: black;
+    background-color: white;
+    height: 100%;
 }
+.text-color {
+    color: rgba(102,102,102)
+}
+a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+  }
+  
+a:hover {
+    color: #fff;
+}
+a::before {
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+  a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
