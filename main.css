@@ -1,6 +1,15 @@
 body {
     background-color: black !important;
 }
+#b-text .new { opacity: 0; }
+        #b-text .div_opacity {
+            -webkit-transition: opacity .2s ease-in-out;
+            -moz-transition: opacity .2s ease-in-out;
+            -ms-transition: opacity .2s ease-in-out;
+            -o-transition: opacity .2s ease-in-out;
+            transition: opacity .2s ease-in-out;
+            opacity: 1;
+        }
 i {
     margin-right: 3px;
 }
@@ -29,10 +38,21 @@ i {
     background:#000 !important; 
     color:#7dcadb !important;
 }
-
+.sauron {
+    position: relative;
+    color: #7dcadb;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    font-size: 20px;
+}
+.sauron-picture {
+    height: 57px;
+}
+hr {
+    color: grey;
+}
 .main {
     background-color: #7dcadb;
-    height: 100%;
 }
 .text-color {
     color: #40374a;
@@ -59,12 +79,22 @@ a::before {
     transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s;
 }
-a:hover::before {
+a:hover::before{
     visibility: visible;
     transform: scaleX(1);
 }
 @media all and (max-width: 768px) {
     .mobhide {
       display: none;
+    }
+}
+@media all and (max-width: 576px) {
+    .pictures, img {
+      height: 200px;
+    }
+}
+@media all and (max-width: 407px) {
+    .pictures, img {
+      height: 150px;
     }
 }
