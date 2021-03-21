@@ -1,6 +1,14 @@
 body {
     background-color: black !important;
 }
+div {
+    font-size: 22px;
+}
+div.fontsauron {
+    font-family: boucherie-block, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
 #b-text .new { opacity: 0; }
         #b-text .div_opacity {
             -webkit-transition: opacity .2s ease-in-out;
@@ -46,7 +54,7 @@ i {
     font-size: 20px;
 }
 .sauron-picture {
-    height: 57px;
+    height: 65px;
 }
 hr {
     color: grey;
@@ -55,7 +63,7 @@ hr {
     background-color: #7dcadb;
 }
 .text-color {
-    color: #40374a;
+    color: #84171f;
 }
 a {
     position: relative;
@@ -106,5 +114,8 @@ a:hover::before{
 @media all and (max-width: 407px) {
     .pictures, img {
       height: 150px;
+    }
+    .eye {
+        height: 60px;
     }
 }
