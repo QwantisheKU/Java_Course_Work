@@ -1,29 +1,51 @@
 body {
-    background-color: rgba(69,77,94) !important;
+    background-color: black !important;
 }
 i {
     margin-right: 3px;
 }
 .nav-pills > li > a {
-    color: white !important;
+    color: #7dcadb !important;
     font-size: 18px;
 }
+.nav-pills > li > div {
+    background-color: black !important;
+}
+.nav-pills > li > div > a {
+    color: #7dcadb;
+}
+.nav-pills > li > div > a:hover::before {
+    visibility: hidden;
+}
+.dropdown-toggle:active, .open .dropdown-toggle {
+    background:#000 !important; 
+    color: #7dcadb !important;
+}
+.dropdown-toggle:hover, .open .dropdown-toggle {
+    background:#000 !important; 
+    color:#7dcadb !important;
+}
+.dropdown-toggle::after, .dropdown-toggle {
+    background:#000 !important; 
+    color:#7dcadb !important;
+}
+
 .main {
-    background-color: white;
+    background-color: #7dcadb;
     height: 100%;
 }
 .text-color {
-    color: rgba(102,102,102)
+    color: #40374a;
 }
 a {
     position: relative;
-    color: #fff;
+    color: #7dcadb;
     text-decoration: none;
     letter-spacing: 0.15em;
   }
   
 a:hover {
-    color: #fff;
+    color: #7dcadb;
 }
 a::before {
     content: "";
@@ -32,12 +54,17 @@ a::before {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #fff;
+    background-color: #7dcadb;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s;
-  }
-  a:hover::before {
+}
+a:hover::before {
     visibility: visible;
     transform: scaleX(1);
-  }
+}
+@media all and (max-width: 768px) {
+    .mobhide {
+      display: none;
+    }
+}
