@@ -83,6 +83,16 @@ a:hover::before{
     visibility: visible;
     transform: scaleX(1);
 }
+@media all and (min-width: 1129px) {
+    .pictures, img {
+      height: 270px;
+    }
+}
+@media all and (max-width: 992px) {
+    .pictures, img {
+      height: 200px;
+    }
+}
 @media all and (max-width: 768px) {
     .mobhide {
       display: none;

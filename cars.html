@@ -6,16 +6,20 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
-
+    <style>
+        div {
+            padding-bottom: 10px;
+        }
+    </style>
     <body>
 
         <div style="margin-top: 20px;">
-            <ul class="nav nav-pills justify-content-end m-auto" style="max-width: 95%; ">
+            <ul class="nav nav-pills justify-content-end m-auto" style="max-width: 95%;">
                 
                 <li class="nav-item">
                 <div class="sauron">
                     <img src="sauron.png" style="text-decoration: none; margin-left: -60px;" class="sauron-picture"/>
-                    <div id="b-text" style=" display: none; margin-top: -37px;"><a class="nav-link">Sauron Drive</a></div>
+                    <span class="mobhide"><div id="b-text" style=" display: none; margin-top: -37px;"><a class="nav-link">Sauron Drive</a></div></span>
                 </div>
                 </li>
                 <li class="nav-item">
@@ -36,7 +40,7 @@
             </ul>
         </div>
         <hr style="color: grey">
-        <div class="container text-color" style="max-width: 95%; margin-top: -4px; margin-bottom: 30px;">
+        <div class="container text-color" style="max-width: 95%; margin-top: -10px; margin-bottom: 30px;">
             <div class="row main" style="padding-bottom: 20px;">
                 <div class="col-xs-12 col-lg-12 text-center" style="margin-top: 10px;">
                     <h1>Автомобили</h1>
@@ -47,70 +51,68 @@
                 </div>
             </div>
             <div class="row main" style="padding-bottom: 20px;">
-                <div class="col-xs-12 col-lg-4 text-center">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
                     <img src="cars/polo.jpg" height="250px">
-                    <div>Volkswagen Polo</div>
+                    <div style="font-size: 1.2em; padding-top: 1px; ">Volkswagen Polo</div>
                 </div>
-                <div class="col-xs-12 col-lg-4 text-center">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
                     <img src="cars/octavia.jpg" height="250px">
                     <div>Skoda Octavia</div>
                 </div>
-                <div class="col-xs-12 col-lg-4 text-center">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
                     <img src="cars/kreta.jpg" height="250px">
                     <div>Hyundai Kreta</div>
                 </div>
-            </div>
-            <div class="row main">
-                <div class="col-xs-12 col-lg-4 text-center">
+            
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
                     <img src="cars/500.jpg" height="250px">
                     <div>Fiat 500</div>
                 </div>
-                <div class="col-xs-12 col-lg-4 text-center">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
                     <img src="cars/rio.jpg" height="250px">
                     <div>Kia Rio</div>
                 </div>
-                <div class="col-xs-12 col-lg-4 text-center">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
                     <img src="cars/qashqai.jpg" height="250px">
                     <div>Nissan Qashqai</div>
                 </div>
             </div>
             <div class="row main" style="padding-bottom: 20px;">
                 <div class="col-xs-12 col-lg-12 text-center" style="margin-top: 10px;">
-                    <hr>
                     <div id="premium"></div>
+                    <hr>
                     <h3>Премиальный класс</h3>
                     <hr>
                 </div>
             </div>
             <div class="row main" style="padding-bottom: 20px;">
-                <div class="col-xs-12 col-lg-4 text-center">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
                     <img src="cars/a3.jpg" height="250px">
                     <div>Audi A3</div>
                 </div>
-                <div class="col-xs-12 col-lg-4 text-center">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
                     <img src="cars/x1.jpeg" height="250px">
                     <div>BMW X1</div>
                 </div>
-                <div class="col-xs-12 col-lg-4 text-center">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
                     <img src="cars/rav4.jpg" height="250px">
                     <div>Toyota RAV4</div>
                 </div>
-            </div>
-            <div class="row main">
-                <div class="col-xs-12 col-lg-4 text-center">
+           
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
                     <img src="cars/g70.jpg" height="250px">
                     <div>Genesis G70</div>
                 </div>
-                <div class="col-xs-12 col-lg-4 text-center">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
                     <img src="cars/q3.jpg" height="250px">
                     <div>Audi Q3</div>
                 </div>
-                <div class="col-xs-12 col-lg-4 text-center">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
                     <img src="cars/320d.jpg" height="250px">
                     <div>BMW 320d</div>
                 </div>
             </div>
-        
         <div class="row main" style="padding-bottom: 20px;">
             <div class="col-xs-12 col-lg-12 text-center" style="margin-top: 10px;">
                 <div id="luxury"></div>
@@ -120,31 +122,29 @@
             </div>
         </div>
         <div class="row main" style="padding-bottom: 20px;">
-            <div class="col-xs-12 col-lg-4 text-center">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
                 <img src="cars/520i.jpg" height="250px">
                 <div>BMW 520i</div>
             </div>
-            <div class="col-xs-12 col-lg-4 text-center">
-                <img src="cars/x1.jpeg" height="250px">
-                <div>BMW X1</div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+                <img src="cars/e200.jpg" height="250px">
+                <div>Mercedes E200</div>
             </div>
-            <div class="col-xs-12 col-lg-4 text-center">
-                <img src="cars/rav4.jpg" height="250px">
-                <div>Toyota RAV4</div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+                <img src="cars/leaf.jpg" height="250px">
+                <div>Nissan Leaf</div>
             </div>
-        </div>
-        <div class="row main">
-            <div class="col-xs-12 col-lg-4 text-center">
-                <img src="cars/g70.jpg" height="250px">
-                <div>Genesis G70</div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+                <img src="cars/macan.jpg" height="250px">
+                <div>Porsche Macan</div>
             </div>
-            <div class="col-xs-12 col-lg-4 text-center">
-                <img src="cars/q3.jpg" height="250px">
-                <div>Audi Q3</div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+                <img src="cars/mustang.jpg" height="250px">
+                <div>Ford Mustang 1965</div>
             </div>
-            <div class="col-xs-12 col-lg-4 text-center">
-                <img src="cars/320d.jpg" height="250px">
-                <div>BMW 320d</div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+                <img src="cars/spider.jpg" height="250px">
+                <div>Ferrari F430 Spider</div>
             </div>
         </div>
     </div>
