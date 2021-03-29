@@ -133,7 +133,7 @@ button:focus {
   /* testing canvas */
   @media all and (max-width: 700px) {
     .mob {
-      position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1000; background-color: black; transition:  transform 0.5s; transform: translate(-100%);
+      position: absolute; top: 0; left: 0; width: 100%; height: 300%; z-index: 1000; background-color: black; transition:  transform 0.5s; transform: translate(-100%);
     }
     .mobhide {
       display: list-item;
@@ -142,7 +142,8 @@ button:focus {
       transform: translate(0%);
     }
     .overf{
-      overflow: hidden;
+      overflow-y:hidden;
+
     }
     .list-items {
       display: block !important; 

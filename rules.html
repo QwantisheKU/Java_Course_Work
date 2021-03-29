@@ -6,9 +6,9 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
-    <body>
+    <body id="overf">
 <!-- BUTTON FOR MOBILE CANVAS -->
-<button id="open" data-trigger="#navbar_main" type="button" style="background-color: black; border: 0; padding-left: 18px; padding-top: 12px; margin-bottom: -16px;" class="showCross">
+<button id="open" onclick="topFunction()" data-trigger="#navbar_main" type="button" style="background-color: black; border: 0; padding-left: 18px; padding-top: 12px; margin-bottom: -16px;" class="showCross">
     <div class="hamburger"></div>
     <div class="hamburger"></div>
     <div class="hamburger"></div>
@@ -89,6 +89,12 @@
         $("#menu").removeClass('bruh');
         $("#overf").removeClass('overf');
     });
+</script>
+<script>
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0; 
+    }
 </script>
 </body>
 </html>
