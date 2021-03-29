@@ -6,44 +6,53 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
-    <style>
-        div {
-            padding-bottom: 10px;
-        }
-    </style>
     <body>
-
-        <div style="margin-top: 23px;">
-            <ul class="nav nav-pills justify-content-end m-auto" style="max-width: 95%; justify-content: space-around !important;">
-                
-                <li class="nav-item" style="margin-left: 45px;">
-                <div class="sauron " >
-                    <img src="sauron.png" style="text-decoration: none; margin-left: -65px;" class="sauron-picture"/>
-                    <span class="mobhide"><div id="b-text" style=" display: none; margin-top: -47px; "><a class="nav-link">Sauron Drive</a></div></span>
-                </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html" style="margin-top: 15px;"><i class="far fa-question-circle"></i><span class="mobhide">Информация</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle"  data-toggle="dropdown" href="cars.html" style="margin-top: 15px;"><i class="fas fa-car"></i><span class="mobhide">Автомобили</span></a>
-                    <div class="dropdown-menu" style="color:black;">
-                        <a class="dropdown-item" href="cars.html#standard">Стандартные</a>
-                        <a class="dropdown-item" href="cars.html#premium">Премиум</a>
-                        <a class="dropdown-item" href="cars.html#luxury">Люкс</a>
+<!-- BUTTON FOR MOBILE CANVAS -->
+<button id="open" data-trigger="#navbar_main" type="button" style="background-color: black; border: 0; padding-left: 18px; padding-top: 12px; margin-bottom: -16px;" class="showCross">
+    <div class="hamburger"></div>
+    <div class="hamburger"></div>
+    <div class="hamburger"></div>
+    </button>
+            <!-- END -->
+            <div class="container text-color" style="max-width: 95%; margin-top: -4px; margin-bottom: 30px;">
+            
+                <div class="mob" id="menu">
+    
+                <div style="margin-top: 55px;">
+                <button id="close" type="button" class="close showCross" ></button>
+                <ul class="nav nav-pills justify-content-end m-auto list-items" style="max-width: 95%; justify-content: space-around !important; ">
+                    
+           
+                    <li class="nav-item" style="margin-left: 45px;">
+                    <div class="sauron " >
+                        <img src="sauron.png" style="text-decoration: none; margin-left: -65px;" class="sauron-picture img700"/>
+                        <span class="mobhide sauronHide"><div id="b-text" style=" display: none; margin-top: -47px; "><a class="nav-link">Sauron Drive</a></div></span>
                     </div>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="rules.html" style="margin-top: 15px;"><i class="fas fa-book"></i><span class="mobhide">FAQ</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacts.html" style="margin-top: 15px;"><i class="far fa-address-book"></i><span class="mobhide">Контакты</span></a>
-                </li>
-            </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="margin-top: 15px;"><i class="far fa-question-circle"></i><span class="mobhide bigger-tabs">Информация</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  data-toggle="dropdown" href="cars.html" style="margin-top: 15px;"><i class="fas fa-car"></i><span class="mobhide bigger-tabs">Автомобили</span></a>
+                        <div class="dropdown-menu" style="color:black; width: 100%; text-align: center;">
+                            <a class="dropdown-item" href="cars.html#standard" style="font-size: 18px;">Стандартные</a>
+                            <a class="dropdown-item" href="cars.html#premium" style="font-size: 18px;">Премиум</a>
+                            <a class="dropdown-item" href="cars.html#luxury" style="font-size: 18px;">Люкс</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="rules.html" style="margin-top: 15px;"><i class="fas fa-book"></i><span class="mobhide bigger-tabs">FAQ</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html" style="margin-top: 15px;"><i class="far fa-address-book"></i><span class="mobhide bigger-tabs">Контакты</span></a>
+                    </li>
+                </ul>
+            
+            </div>
         </div>
         <hr style="color: grey">
-        <div class="container text-color" style="max-width: 95%; margin-top: -10px; margin-bottom: 30px;">
+        
             <div class="row main" style="padding-bottom: 20px;">
                 <div class="col-xs-12 col-lg-12 text-center" style="margin-top: 10px;">
                     <h1>Автомобили</h1>
@@ -53,9 +62,21 @@
                     <hr>
                 </div>
             </div>
+            
             <div class="row main" style="padding-bottom: 20px;">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
-                    <img src="cars/polo.jpg" height="250px">
+                    <img src="cars/polo.jpg" height="250px" id="myImg">
+                    <div id="myModal" class="modal">
+
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                      
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img01">
+                      
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                      </div>
                     <div style="font-size: 1.2em; padding-top: 1px; ">Volkswagen Polo</div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
@@ -69,7 +90,7 @@
             
 
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
-                    <img src="cars/500.jpg" height="250px">
+                    <img src="cars/500.jpg" height="250px" id="myImg">
                     <div>Fiat 500</div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
@@ -170,6 +191,17 @@
      };
      $('#b-text').show();
      $('#b-text').animate_Text();
+    });
+</script>
+<script>
+    $("#open").click(function() {
+        $("#menu").addClass('bruh');
+        $("#overf").addClass('overf');
+    });
+    
+    $("#close").click(function() {
+        $("#menu").removeClass('bruh');
+        $("#overf").removeClass('overf');
     });
 </script>
 </body>
