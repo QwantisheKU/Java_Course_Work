@@ -1,0 +1,105 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Каршеринг</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body id="overf">
+<!-- BUTTON FOR MOBILE CANVAS -->
+<button id="open" onclick="topFunction()" data-trigger="#navbar_main" type="button" style="background-color: black; border: 0; padding-left: 18px; padding-top: 12px; margin-bottom: -16px;" class="showCross">
+    <div class="hamburger"></div>
+    <div class="hamburger"></div>
+    <div class="hamburger"></div>
+    </button>
+            <!-- END -->
+            <div class="container text-color" style="max-width: 95%; margin-top: -4px; margin-bottom: 30px;">
+
+                <div class="mob" id="menu">
+
+                <div style="margin-top: 55px;">
+                <button id="close" type="button" class="close showCross" ></button>
+                <ul class="nav nav-pills justify-content-end m-auto list-items" style="max-width: 95%; justify-content: space-around !important; ">
+
+
+                    <li class="nav-item" style="margin-left: 45px;">
+                    <div class="sauron " >
+                        <img src="sauron.png" style="text-decoration: none; margin-left: -65px;" class="sauron-picture img700"/>
+                        <span class="mobhide sauronHide"><div id="b-text" style=" display: none; margin-top: -47px; "><a class="nav-link">Sauron Drive</a></div></span>
+                    </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="information" style="margin-top: 15px;"><i class="far fa-question-circle"></i><span class="mobhide bigger-tabs">Информация</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  data-toggle="dropdown" href="automobiles" style="margin-top: 15px;"><i class="fas fa-car"></i><span class="mobhide bigger-tabs">Автомобили</span></a>
+                        <div class="dropdown-menu" style="color:black; width: 100%; text-align: center;">
+                            <a class="dropdown-item" href="automobiles#standard" style="font-size: 18px;">Стандартные</a>
+                            <a class="dropdown-item" href="automobiles#premium" style="font-size: 18px;">Премиум</a>
+                            <a class="dropdown-item" href="automobiles#luxury" style="font-size: 18px;">Люкс</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="rules" style="margin-top: 15px;"><i class="fas fa-book"></i><span class="mobhide bigger-tabs">FAQ</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts" style="margin-top: 15px;"><i class="far fa-address-book"></i><span class="mobhide bigger-tabs">Контакты</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <form class="d-flex quit" style="margin-top: 10px;color: #7dcadb !important; border-color: #7dcadb !important;">
+                            <a href="/logout" role="button" class="btn btn-outline-light">Выйти</a>
+                        </form>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <hr style="color: grey">
+            <div class="row main" style="padding-bottom: 20px;">
+                <div class="col-xs-12 col-lg-12 text-center" style="margin-top: 10px;">
+                    <h1>Контакты</h1>
+                    <hr>
+                </div>
+            </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+     $.fn.animate_Text = function() {
+      var string = this.text();
+      return this.each(function(){
+       var $this = $(this);
+       $this.html(string.replace(/./g, '<span class="new">$&</span>'));
+       $this.find('span.new').each(function(i, el){
+        setTimeout(function(){ $(el).addClass('div_opacity'); }, 20 * i);
+       });
+      });
+     };
+     $('#b-text').show();
+     $('#b-text').animate_Text();
+    });
+</script>
+<script>
+    $("#open").click(function() {
+        $("#menu").addClass('bruh');
+        $("#overf").addClass('overf');
+    });
+
+    $("#close").click(function() {
+        $("#menu").removeClass('bruh');
+        $("#overf").removeClass('overf');
+    });
+</script>
+<script>
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+</body>
+</html>
