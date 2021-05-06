@@ -2,7 +2,7 @@ package com.carshare.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import com.carshare.Models.User;
+import com.carshare.classes.User;
 
 import java.util.Optional;
 

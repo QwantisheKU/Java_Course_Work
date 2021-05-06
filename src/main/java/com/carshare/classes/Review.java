@@ -1,4 +1,4 @@
-package com.carshare.Models;
+package com.carshare.classes;
 
 import javax.persistence.*;
 

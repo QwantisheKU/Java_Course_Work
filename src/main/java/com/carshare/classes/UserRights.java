@@ -1,4 +1,4 @@
-package com.carshare.Models;
+package com.carshare.classes;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
@@ -9,7 +9,7 @@ import java.util.Collection;
 import java.util.Collections;
 
 @RequiredArgsConstructor
-public class UserPrincipal implements UserDetails {
+public class UserRights implements UserDetails {
     private final User user;
 
     @Override

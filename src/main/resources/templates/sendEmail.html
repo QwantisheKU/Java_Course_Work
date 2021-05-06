@@ -1,0 +1,28 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Каршеринг</title>
+</head>
+<body>
+<div class="input-form">
+    <form th:action="send" th:object="${emailDto}" method="post">
+        <div>
+            <label class="active" for="to">Email</label>
+            <input th:field="*{to}" id="to" type="email"/>
+        </div>
+        <div>
+            <ul>
+                <li th:each="number, stat : *{tasks}" class="childDisplay">
+                    <div>
+                        <input th:field="*{tasks[__${stat.index}__]}" th:id="${'tasks-'+stat.index}" type="text"/>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <button type="submit" name="send">Отправить</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

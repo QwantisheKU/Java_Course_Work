@@ -1,6 +1,6 @@
 package com.carshare.controller;
 
-import com.carshare.Models.Review;
+import com.carshare.classes.Review;
 import com.carshare.repositories.ReviewRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

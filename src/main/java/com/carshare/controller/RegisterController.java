@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import com.carshare.dto.RegisterDTO;
+import com.carshare.dto.RegisterDto;
 import com.carshare.exceptions.UserAlreadyExistsException;
 import com.carshare.service.UserService;
 
@@ -27,7 +27,7 @@ public class RegisterController {
 
     @PostMapping
     public String addUser(
-            @Valid @ModelAttribute("signUpUser") RegisterDTO registerDTO,
+            @Valid @ModelAttribute("signUpUser") RegisterDto registerDTO,
             BindingResult result,
             Map<String, Object> model
     ) {

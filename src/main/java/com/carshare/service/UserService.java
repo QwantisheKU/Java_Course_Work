@@ -6,10 +6,10 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import com.carshare.dto.RegisterDTO;
+import com.carshare.dto.RegisterDto;
 import com.carshare.exceptions.UserAlreadyExistsException;
-import com.carshare.Models.User;
-import com.carshare.Models.UserPrincipal;
+import com.carshare.classes.User;
+import com.carshare.classes.UserRights;
 import com.carshare.repositories.UserRepository;
 
 import javax.transaction.Transactional;
@@ -21,7 +21,7 @@ public class UserService implements UserDetailsService {
     private final PasswordEncoder passwordEncoder;
 
     @Transactional
-    public void addNewUser(RegisterDTO request) throws UserAlreadyExistsException {
+    public void addNewUser(RegisterDto request) throws UserAlreadyExistsException {
         String username = request.getUsername();
         if (userExists(username)) {
             throw new UserAlreadyExistsException(username);
@@ -44,6 +44,6 @@ public class UserService implements UserDetailsService {
                 .orElseThrow(
                         () -> new UsernameNotFoundException("Пользователь не найден: " + username)
                 );
-        return new UserPrincipal(user);
+        return new UserRights(user);
     }
 }
