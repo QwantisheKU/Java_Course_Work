@@ -1,38 +1,40 @@
-com/carshare/classes/UserRights.java
- com.carshare.classes.UserRights
-com/carshare/controller/InfoController.java
- com.carshare.controller.InfoController
-com/carshare/controller/RootController.java
- com.carshare.controller.RootController
-com/carshare/CarshareApplication.java
- com.carshare.CarshareApplication
-com/carshare/controller/ContactsController.java
- com.carshare.controller.ContactsController
-com/carshare/controller/CarsController.java
- com.carshare.controller.CarsController
-com/carshare/config/AppConfig.java
- com.carshare.config.AppConfig
-com/carshare/exceptions/UserAlreadyExistsException.java
- com.carshare.exceptions.UserAlreadyExistsException
-com/carshare/repositories/UserRepository.java
- com.carshare.repositories.UserRepository
-com/carshare/controller/ReviewsController.java
- com.carshare.controller.ReviewsController
-com/carshare/classes/Review.java
- com.carshare.classes.Review
-com/carshare/repositories/ReviewRepository.java
- com.carshare.repositories.ReviewRepository
-com/carshare/classes/User.java
- com.carshare.classes.User
-com/carshare/dto/RegisterDto.java
- com.carshare.dto.RegisterDto
-com/carshare/config/SecurityConfig.java
- com.carshare.config.SecurityConfig
+com/carshare/controller/AdminController.java
+ com.carshare.controller.AdminController
 com/carshare/service/UserService.java
  com.carshare.service.UserService
+com/carshare/config/SecurityConfig.java
+ com.carshare.config.SecurityConfig
+com/carshare/repositories/ReviewRepository.java
+ com.carshare.repositories.ReviewRepository
 com/carshare/controller/RegisterController.java
  com.carshare.controller.RegisterController
+com/carshare/controller/ContactsController.java
+ com.carshare.controller.ContactsController
+com/carshare/classes/Review.java
+ com.carshare.classes.Review
 com/carshare/dto/EmailDto.java
  com.carshare.dto.EmailDto
+com/carshare/dto/RegisterDto.java
+ com.carshare.dto.RegisterDto
+com/carshare/repositories/UserRepository.java
+ com.carshare.repositories.UserRepository
+com/carshare/config/AppConfig.java
+ com.carshare.config.AppConfig
 com/carshare/controller/EmailController.java
  com.carshare.controller.EmailController
+com/carshare/classes/UserRights.java
+ com.carshare.classes.UserRights
+com/carshare/controller/CarsController.java
+ com.carshare.controller.CarsController
+com/carshare/CarshareApplication.java
+ com.carshare.CarshareApplication
+com/carshare/exceptions/UserAlreadyExistsException.java
+ com.carshare.exceptions.UserAlreadyExistsException
+com/carshare/controller/InfoController.java
+ com.carshare.controller.InfoController
+com/carshare/classes/User.java
+ com.carshare.classes.User
+com/carshare/controller/ReviewsController.java
+ com.carshare.controller.ReviewsController
+com/carshare/controller/RootController.java
+ com.carshare.controller.RootController

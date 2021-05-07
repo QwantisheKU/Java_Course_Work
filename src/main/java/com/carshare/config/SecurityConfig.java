@@ -14,6 +14,7 @@ import com.carshare.service.UserService;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
     private UserService userService;
 
     @Autowired
@@ -41,6 +42,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/css/**").permitAll()
                 .antMatchers("/js/**").permitAll()
                 .antMatchers("/**").permitAll()
+                .antMatchers("/admin").hasRole("ADMIN")
                 .antMatchers("/login", "/register").not().authenticated()
                 .anyRequest().authenticated()
                 .and()
